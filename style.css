@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 30px;
+}
+
 a {
     color: white;
 }
@@ -13,14 +17,6 @@ a {
 .padrelogo {
     display: flex;
     justify-content: flex-start;
-}
-
-
-/* Reset de estilos */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 /* Estilos del navbar */
@@ -59,10 +55,6 @@ a {
     color: #ff6600;
 }
 
-/* Otros estilos para el resto de la página */
-/* Agrega tus estilos adicionales aquí */
-
-
 .logoNavbar {
     height: 180px;
     width: 200px;
@@ -78,7 +70,6 @@ a {
     position: relative;
     bottom: -100px;
 }
-
 
 .iniciarsesion {
     color: rgb(255, 255, 255);
@@ -117,8 +108,6 @@ a {
     position: relative;
     top: -180px;
     right: -60px;
-
-
 }
 
 .header {
@@ -130,8 +119,9 @@ a {
 
 .Perfil {
     position: relative;
-    left: -180px;
-    bottom: -20px;
+    left: -120px;
+    top: -140px;
+    margin: 20px;
 }
 
 .tituloPerfil {
@@ -139,20 +129,24 @@ a {
     position: relative;
     right: -600px;
 }
+
 .fotoPerfil{
     border-radius: 100px;
 }
 
-
 .tabla {
+    position: relative;
+    top: -300px;
+    left: -50px;
     width: 100%;
     border-collapse: collapse;
     border: 2px solid #ddd;
     position: relative;
     right: -200px;
+    max-width: 800px;
+    margin-left: 240px;
 }
 
-h,
 td {
     padding: 8px;
     text-align: left;
@@ -170,7 +164,6 @@ tr:nth-child(odd) {
 tr:hover {
     background-color: #f2f2f2;
 }
-
 
 .contenedor {
     width: 100%;
@@ -275,16 +268,10 @@ form input {
     padding: 20px;
 }
 
-.tabla {
-    max-width: 800px;
-    margin-left: 240px;
-
-}
-
 .resumen-estadisticas {
     position: relative;
-    top: -20px;
-    right: -20px;
+    top: -400px;
+    right: -1000px;
     width: 200px;
     background-color: #f9f9f9;
     padding: 20px;
@@ -292,6 +279,7 @@ form input {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
 }
+
 .resumen-estadisticas p {
     margin-bottom: 5px;
     color: #666;
@@ -299,4 +287,29 @@ form input {
 
 .resumen-estadisticas p:last-child {
     margin-bottom: 0;
+}
+
+.fotoPerfilContainer {
+    position: relative;
+    right: -200px;
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden; 
+}
+
+.fotoPerfilInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.fotoPerfil {
+    width: 100%; 
+    height: auto; 
 }

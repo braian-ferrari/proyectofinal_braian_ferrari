@@ -189,3 +189,16 @@ resetStatsBtn.addEventListener("click", function () {
 
     sumarEstadisticas();
 });
+const fotoPerfilInput = document.getElementById("fotoPerfilInput");
+
+fotoPerfilInput.addEventListener("change", function(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function() {
+        const fotoPerfil = document.querySelector(".fotoPerfil");
+        fotoPerfil.src = reader.result;
+    }
+
+    reader.readAsDataURL(file);
+});
