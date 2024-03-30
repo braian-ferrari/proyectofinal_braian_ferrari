@@ -8,7 +8,6 @@ const btnLanzarModal = document.querySelector("#lanzar-modal");
 const btnOcultarModal = document.querySelector("#ocultar-modal");
 const contModal = document.querySelector(".contenedor-modal");
 
-
 btnLanzarModal.addEventListener("click", (e) => {
     e.preventDefault();
     contModal.classList.add("mostrar");
@@ -202,3 +201,5 @@ fotoPerfilInput.addEventListener("change", function(event) {
 
     reader.readAsDataURL(file);
 });
+
+
