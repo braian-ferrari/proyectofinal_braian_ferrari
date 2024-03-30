@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.padrelogo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 100vh;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    padding: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff6600;
+}
+
+/* Otros estilos para el resto de la página */
+/* Agrega tus estilos adicionales aquí */
+
+
+.logoNavbar {
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin: 8px;
+    position: relative;
+    right: -20px;
+}
+
+.Logoindex {
+    width: 700px;
+    display: flex;
+}
+
+.formularioindex {
+    position: relative;
+    top: 290px;
+    width: 500px;
+}
+
+.iniciarsesion {
+    color: rgb(255, 255, 255);
+    background-color: rgb(4, 162, 253);
+    width: 200px;
+}
+
+.iniciarsesion:hover {
+    background: rgb(180, 58, 149);
+    background: linear-gradient(90deg, rgba(180, 58, 149, 1) 11%, rgba(29, 161, 253, 1) 37%, rgba(252, 176, 69, 1) 78%);
+    color: white;
+}
+
+.OlviCont {
+    margin-left: 20px;
+}
+
+.registrarse {
+    color: white;
+    margin-top: 20px;
+    width: 400px;
+    background-color: rgb(231, 3, 155);
+}
+
+.registrarse:hover {
+    background: rgb(180, 58, 149);
+    background: linear-gradient(90deg, rgba(180, 58, 149, 1) 11%, rgba(29, 161, 253, 1) 37%, rgba(252, 176, 69, 1) 78%);
+    color: white;
+}
+
+.slogan {
+    font-size: xx-large;
+    width: 600px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    top: 520px;
+    left: 320px;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    margin: 0;
+}
+
+.Perfil {
+    position: relative;
+    left: -180px;
+    bottom: -20px;
+}
+
+.tituloPerfil {
+    width: 400px;
+    position: relative;
+    right: -600px;
+}
+
+
+.tabla {
+    position: relative;
+    right: -500px;
+    width: 1000px;
+}
+
+
+.contenedor {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.contenedor p {
+    margin: 30px 0;
+    font-size: 2.5em;
+}
+
+.btn {
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(4, 162, 253);
+    border: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: rgb(31, 31, 145);
+}
+
+.img {
+    width: 50%;
+}
+
+.contenedor-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-modal.mostrar {
+    background-color: black;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.contenedor-modal .modal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 500px;
+    padding: 50px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    margin: 15px;
+    padding: 10px;
+}
+
+.datos-Perfil li {
+    list-style-type: none;
+}
+
+.contenedor-modal-estadisticas {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-estadisticas {
+    position: fixed;
+    background-color: white;
+    width: 400px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.tabla {
+    max-width: 800px;
+    margin-left: 240px;
+    
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon/favicon-32x32.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./logo/logo-Photoroom.png-Photoroom.png" alt="Logo Basquet Arg" class="logoNavbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Mensajes</a></li>
+                <li><a href="#">Notificaciones</a></li>
+                <li><a href="#">Nuevo Post</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Resto del contenido de la página -->
+</body>
+
+</html>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <img src="./logo/foto perfil vacia.png" alt="">
+            </div>
+            <div class="col">
+                <section class="Perfil">
+                    <ul class="datos-Perfil">
+
+                    </ul>
+
+                    <div class="contenedor">
+                        <button class="btn" type="submit" id="lanzar-modal">Crear Perfil</button>
+
+                        <button class="btn" id="btnAgregarEstadisticas">Agregar Estadísticas</button>
+                    </div>
+                </section>
+            </div>
+            <div class="contenedor-modal-estadisticas">
+                <div class="modal-estadisticas">
+                    <h2>Ingrese las estadísticas del partido</h2>
+                    <form id="formularioEstadisticas">
+                        <input type="number" id="puntos" placeholder="Puntos">
+                        <input type="number" id="asistencias" placeholder="Asistencias">
+                        <input type="number" id="rebotes" placeholder="Rebotes">
+                        <input type="number" id="perdidas" placeholder="Balones perdidos">
+                        <input type="number" id="recuperados" placeholder="Balones recuperados">
+                        <input type="number" id="minutos" placeholder="Minutos jugados">
+                        <button class="btn" type="submit">Guardar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="resumen-estadisticas">
+                <h2>Resumen de Estadísticas</h2>
+                <p id="totalPuntos">Total Puntos: 0</p>
+                <p id="totalAsistencias">Total Asistencias: 0</p>
+                <p id="totalRebotes">Total Rebotes: 0</p>
+                
+            </div>
+            
+            
+
+            
+        </div>
+    </div>
+
+
+    <div class="contenedor-modal">
+        <div class="modal">
+            <h2>Crear Perfil</h2>
+
+            <form action="">
+                <input type="text" placeholder="Introduce un nombre" id="nombreModal">
+                <input type="text" placeholder="Introduce la posicion" id="posicionModal">
+                <input type="text" placeholder="Introduce la estatura" id="estaturaModal">
+                <input type="text" placeholder="Introduce el equipo" id="equipoModal">
+                <button class="btn" type="submit" id="ocultar-modal">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="tablaEstadisticas">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Puntos</th>
+                    <th>Asistencias</th>
+                    <th>Rebotes</th>
+                    <th>Perdidas</th>
+                    <th>Recuperados</th>
+                    <th>Minutos jugados</th>
+                </tr>
+            </thead>
+            <tbody id="bodyTablaEstadisticas">
+                <!-- Aquí se insertarán las filas de la tabla -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
