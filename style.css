@@ -283,7 +283,20 @@ form input {
 
 .resumen-estadisticas {
     position: relative;
-    top: -150px;
+    top: -20px;
     right: -20px;
     width: 200px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+.resumen-estadisticas p {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.resumen-estadisticas p:last-child {
+    margin-bottom: 0;
 }

@@ -147,7 +147,6 @@ function sumarEstadisticas() {
 
     const resumenEstadisticas = document.querySelector(".resumen-estadisticas");
     resumenEstadisticas.innerHTML = `
-        <h2>Resumen de Estadísticas</h2>
         <p>Total Puntos: ${totalPuntos}</p>
         <p>Total Asistencias: ${totalAsistencias}</p>
         <p>Total Rebotes: ${totalRebotes}</p>
